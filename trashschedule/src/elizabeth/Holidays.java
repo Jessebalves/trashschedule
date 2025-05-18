@@ -52,8 +52,7 @@ public class Holidays {
 			System.out.println("Happy 4th of July! It is a Holiday! No Trash!");
 			isHoliday = true;
 		}
-		// Labor day, month = september, number_day = monday, rando = week of month
-		// (Test This)
+		// Labor Day
 		else if (month == 9 && number_day == 2 && week_of_month == 1) {
 			System.out.println("Labor Day");
 			isHoliday = true;
