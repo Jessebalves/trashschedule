@@ -29,13 +29,15 @@ public class Parse {
 					count++;
 				}
 				count = 0;
-				address_name += pieces[i]+ " "; // add exploded street name sections together. i.e (vine st has a space in between, add 'vine' and 'st' together
+				address_name += pieces[i]+ " "; //address can consist of varying lengths
+				//To account for this, we add all of the pieces to a variable called address name
+				//with the exception of address number and zip code associated with the address
 			}
 		}
 		address_number = pieces[0];
 		zip_code = pieces[pieces.length - 1];
 		
-		
+		//Full address as a single string
 		String[] prepped_addr = {address_number, address_name, zip_code};
 		return prepped_addr;
 
